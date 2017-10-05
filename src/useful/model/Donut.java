@@ -21,8 +21,20 @@ public class Donut
 	{
 		this();
 		this.flavor = flavor;
+	}
 	public String toString()
 	{
-	String description = "This is a " + flavor 	
+	String description = "This is a " + flavor + " donut";
+	
+	return description;
+	}
+	
+	public String getShape()
+	{
+		return shape;
+	}
+	public String getFlavor()
+	{
+		return flavor;
 	}
 }
