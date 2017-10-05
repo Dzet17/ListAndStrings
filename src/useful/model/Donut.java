@@ -33,6 +33,12 @@ public class Donut
 	{
 		return shape;
 	}
+	
+	public void setShape(String shape)
+	{
+		this.shape = shape;
+	}
+	
 	public String getFlavor()
 	{
 		return flavor;
