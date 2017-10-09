@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import useful.model.Donut;
 import useful.view.PopupDisplay;
 
-public class ToolController 
+public class ListController 
 {
 private List<Donut> donutList;
 private PopupDisplay display;
 
-public ToolController()
+public ListController()
 {
 	donutList = new ArrayList<Donut>();
 	display= new PopupDisplay();
@@ -62,14 +62,12 @@ public ToolController()
 		Donut chocolate = new Donut("chocolate");
 		Donut maple = new Donut("maple");
 		Donut appleFritter = new Donut ("apple fritter");
-		Donut cinnamon = new Donut ("cinnamon");
 		
 		donutList.add(chocolate);
 		donutList.add(sugarCoated);
 		donutList.add(maple);
 		donutList.add(appleFritter);
 		donutList.add(jellyFilled);
-		donutList.add(cinnamon);
 		
 	}
 	
@@ -83,8 +81,19 @@ public ToolController()
 		display.displayText("The list is still: " + donutList.size() + " items.");
 		removed = donutList.set(3, new Donut());
 		display.displayText("The donut with flavor " + removed.getFlavor() + " has been removed");
+		
+	}
+
+	private void backwardsLoopDemo()
+	
+	
+	public ArrayList<Donut> getDonutList()
+	{
+		return (ArrayList<Donut>)donutList;
+	}
+	
+	public PopupDisplay getDisplay()
+	{
+		return display;
 	}
 }
-
-//Practice with Lists
-	
