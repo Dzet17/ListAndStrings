@@ -85,8 +85,12 @@ public ListController()
 	}
 
 	private void backwardsLoopDemo()
-	
-	
+	{
+		for (int index = donutList.size(); index >= 0; index -= 1)
+		{
+			display.displayText(donutList.get(index).getFlavor());
+		}
+	}
 	public ArrayList<Donut> getDonutList()
 	{
 		return (ArrayList<Donut>)donutList;
